@@ -23,6 +23,7 @@ const PincodeLookup = () => {
 
       if (response.data[0].Status == "Success") {
         setData(response.data[0].PostOffice);
+        setError("");
       }
     } catch (error) {
       setError("An error occurred while fetching the data.");
